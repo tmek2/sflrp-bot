@@ -21,12 +21,12 @@ intents.members = True
 bot = commands.Bot(command_prefix='s!', intents=intents)
 
 # -------------------- CONFIG --------------------
-WELCOME_CHANNEL_ID = 1398947096794628206
+WELCOME_CHANNEL_ID = 1370845563230355537
 SECRET_ROLE_NAME = "Gamer"
 
 # ✅ Use the ROLE IDs here (right-click role → Copy ID)
-AUTO_ROLE_1_ID = 1392579956269256802  # 🔧 replace with your first role ID
-AUTO_ROLE_2_ID = 1392579956269256797  # 🔧 replace with your second role ID
+AUTO_ROLE_1_ID = 1370840224267239484  # 🔧 replace with your first role ID
+AUTO_ROLE_2_ID = 1370841279801458698  # 🔧 replace with your second role ID
 
 # Emojis and link
 COUNTER_EMOJI_SPEC = "<:peoples12:1416376261290491904>"
@@ -193,3 +193,4 @@ async def _main():
 
 if __name__ == "__main__":
     asyncio.run(_main())
+
