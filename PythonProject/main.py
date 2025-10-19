@@ -29,8 +29,8 @@ AUTO_ROLE_1_ID = 1370840224267239484  # 🔧 replace with your first role ID
 AUTO_ROLE_2_ID = 1370841279801458698  # 🔧 replace with your second role ID
 
 # Emojis and link
-COUNTER_EMOJI_SPEC = "<:peoples12:1416376261290491904>"
-LINK_EMOJI_SPEC = "<:exam:1416376255745626273>"
+COUNTER_EMOJI_SPEC = "<:peoplesflrp:1425144579740401785>"
+LINK_EMOJI_SPEC = "<:lightbulb:1425144604101185616>"
 LINK_LABEL = "Information"
 LINK_URL = "https://discord.com/channels/1370798053899894926/1370856611287007384"
 
@@ -193,5 +193,6 @@ async def _main():
 
 if __name__ == "__main__":
     asyncio.run(_main())
+
 
 
