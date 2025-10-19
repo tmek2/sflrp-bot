@@ -32,7 +32,7 @@ AUTO_ROLE_2_ID = 1370841279801458698  # 🔧 replace with your second role ID
 COUNTER_EMOJI_SPEC = "<:peoples12:1416376261290491904>"
 LINK_EMOJI_SPEC = "<:exam:1416376255745626273>"
 LINK_LABEL = "Information"
-LINK_URL = "https://discord.com/channels/1392579956143554580/1392584900674191512"
+LINK_URL = "https://discord.com/channels/1370798053899894926/1370856611287007384"
 
 COUNT_HUMANS_ONLY = True  # True = exclude bots
 
@@ -193,4 +193,5 @@ async def _main():
 
 if __name__ == "__main__":
     asyncio.run(_main())
+
 
