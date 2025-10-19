@@ -64,7 +64,7 @@ def resolve_emoji(spec):
 # -------------------- VIEW CREATION --------------------
 def make_welcome_view(guild: discord.Guild) -> discord.ui.View:
     """Create welcome view with member count + link button."""
-    count = sum(1 for m in guild.members if not m.bot) if COUNT_HUMANS_ONLY else guild.member_count
+    count = guild.member_count
     view = discord.ui.View(timeout=None)
 
     view.add_item(
@@ -193,6 +193,7 @@ async def _main():
 
 if __name__ == "__main__":
     asyncio.run(_main())
+
 
 
 
