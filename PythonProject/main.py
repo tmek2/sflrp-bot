@@ -168,15 +168,14 @@ async def poll(ctx, *, question):
     await poll_message.add_reaction("👍")
     await poll_message.add_reaction("👎")
 
-# -------------------- KEEPALIVE (UPDATED) --------------------
-# Minimal /health endpoint returning 204 No Content to avoid "output too large"
+# -------------------- KEEPALIVE (ADDED) --------------------
+# Tiny HTTP server so UptimeRobot/Render can ping "/"
 async def _keepalive_handle(request):
-    return web.Response(status=204, headers={"Cache-Control": "no-store"})
+    return web.Response(text="OK")
 
 async def _run_keepalive(port: int):
     app = web.Application()
-    app.router.add_get("/health", _keepalive_handle)
-    app.router.add_head("/health", _keepalive_handle)
+    app.router.add_get("/", _keepalive_handle)
     runner = web.AppRunner(app)
     await runner.setup()
     site = web.TCPSite(runner, host="0.0.0.0", port=port)
@@ -194,7 +193,6 @@ async def _main():
 
 if __name__ == "__main__":
     asyncio.run(_main())
-
 
 
 
